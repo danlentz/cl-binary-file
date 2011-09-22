@@ -1,0 +1,25 @@
+CL-BINARY-FILE
+Copyright (c) 2008 Sami Makinen
+
+
+Introduction
+
+  The binary file package contains utilities to read and write binary
+  files.  The utilities support writing bytes of size 8 bits (octets)
+  and currently only two's complement signed encoding is supported.
+
+  The package has also in-memory binary stream which can be used as a
+  file stream.
+
+Dependencies
+
+  cl-btree depends on trivial-gray-streams.
+
+Installation
+
+  cl-binary-file can be installed with asdf-install.
+
+  (require 'asdf-install)
+  (asdf-install:install 'cl-binary-file) ; installs the most recent release
+
+  See unit tests for more information.

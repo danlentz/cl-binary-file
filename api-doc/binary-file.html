@@ -1,0 +1,874 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="cludg.css"/>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+<title>
+binary-file</title>
+</head>
+<body>
+<div id="navbar">
+<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+<colgroup span="3">
+<col width="0*"/>
+<col width="0*"/>
+<col width="1*"/>
+</colgroup>
+<tr>
+<td align="left" valign="baseline">
+<br/>
+</td>
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td align="left" valign="baseline">
+<span class="upchain">
+<b>
+binary-file</b>
+<br/>
+<a href="index.html">
+Index</a>
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="cludg-doc-body">
+<h2>
+binary-file
+</h2>
+<table style="width: 100%;" class="summary-table">
+<tr class="table-heading-color">
+<th class="summary" colspan="2">
+Class summary</th>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="binary-file.html#_g937">
+binary-array-input-stream</a>
+</td>
+<td class="summary">
+inherits from <a href="binary-file.html#_g933"><em class="cl">binary-array-stream</em></a>, <em class="cl">fundamental-binary-input-stream</em> and <em class="cl">fundamental-character-input-stream</em></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="binary-file.html#_g938">
+binary-array-io-stream</a>
+</td>
+<td class="summary">
+inherits from <a href="binary-file.html#_g936"><em class="cl">binary-array-output-stream</em></a> and <a href="binary-file.html#_g937"><em class="cl">binary-array-input-stream</em></a></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="binary-file.html#_g936">
+binary-array-output-stream</a>
+</td>
+<td class="summary">
+inherits from <a href="binary-file.html#_g933"><em class="cl">binary-array-stream</em></a>, <em class="cl">fundamental-binary-output-stream</em> and <em class="cl">fundamental-character-output-stream</em></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="binary-file.html#_g933">
+binary-array-stream</a>
+</td>
+<td class="summary">
+inherits from <em class="cl">fundamental-binary-stream</em> and <em class="cl">fundamental-character-stream</em></td>
+</tr>
+</table>
+<table style="width: 100%;" class="summary-table">
+<tr class="table-heading-color">
+<th class="summary" colspan="2">
+Method summary</th>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="binary-file.html#_g935">
+binary-array</a>
+</td>
+<td class="summary">
+binary-array-stream</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="binary-file.html#_g956">
+binary-array-stream-p</a>
+</td>
+<td class="summary">
+obj</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="binary-file.html#_g949">
+(setf stream-file-position)</a>
+</td>
+<td class="summary">
+position-spec (stream binary-array-stream)</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="binary-file.html#_g948">
+stream-file-position</a>
+</td>
+<td class="summary">
+(stream binary-array-stream)</td>
+</tr>
+</table>
+<table style="width: 100%;" class="summary-table">
+<tr class="table-heading-color">
+<th class="summary" colspan="2">
+Function summary</th>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="binary-file.html#_g950">
+binary-stream-length</a>
+</td>
+<td class="summary">
+stream</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="binary-file.html#_g953">
+make-binary-array-input-stream</a>
+</td>
+<td class="summary">
+<em>&amp;optional</em> initial-contents</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="binary-file.html#_g955">
+make-binary-array-io-stream</a>
+</td>
+<td class="summary">
+<em>&amp;optional</em> initial-contents</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="binary-file.html#_g954">
+make-binary-array-output-stream</a>
+</td>
+<td class="summary">
+<em>&amp;optional</em> initial-contents</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="binary-file.html#_g966">
+open-binary-stream</a>
+</td>
+<td class="summary">
+filespec <em>&amp;key</em> (if-exists :overwrite) (if-does-not-exist :error)</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="binary-file.html#_g962">
+read-array</a>
+</td>
+<td class="summary">
+stream size <em>&amp;optional</em> (element-reader #'read-byte)</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="binary-file.html#_g961">
+read-bytes</a>
+</td>
+<td class="summary">
+stream size <em>&amp;optional</em> offset</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="binary-file.html#_g959">
+read-integer</a>
+</td>
+<td class="summary">
+stream <em>&amp;key</em> (bytes 1) (signed nil) (endianness :little-endian)</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="binary-file.html#_g960">
+read-integers</a>
+</td>
+<td class="summary">
+stream size <em>&amp;key</em> (bytes 1) (signed nil) (endianness :little-endian)</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="binary-file.html#_g964">
+write-integer</a>
+</td>
+<td class="summary">
+value stream <em>&amp;key</em> (bytes 1) (endianness :little-endian)</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="binary-file.html#_g965">
+write-integers</a>
+</td>
+<td class="summary">
+seq stream <em>&amp;key</em> (bytes 1) (endianness :little-endian)</td>
+</tr>
+</table>
+<table style="width: 100%;" class="summary-table">
+<tr class="table-heading-color">
+<th class="summary" colspan="2">
+Macro summary</th>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="binary-file.html#_g968">
+with-input-from-binary-array</a>
+</td>
+<td class="summary">
+(var array <em>&amp;key</em> (index 0 index-p) start end) <em>&amp;body</em> body</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="binary-file.html#_g967">
+with-output-to-binary-array</a>
+</td>
+<td class="summary">
+(stream <em>&amp;optional</em> array-form) <em>&amp;body</em> body</td>
+</tr>
+</table>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g933">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+binary-array-stream&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <em class="cl">fundamental-binary-stream</em> and <em class="cl">fundamental-character-stream</em></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+The base class for binary array streams. The stream 
+ is implemented with gray streams. The stream can used to store 
+ both characters and bytes. The class has adjustable array for storing 
+ stream contents. 
+ </p>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:array&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g935">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+binary-array&nbsp;&nbsp;</td>
+<td class="lambda-list">
+binary-array-stream</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the binary-array of the specified binary-array-stream 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g936">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+binary-array-output-stream&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="binary-file.html#_g933"><em class="cl">binary-array-stream</em></a>, <em class="cl">fundamental-binary-output-stream</em> and <em class="cl">fundamental-character-output-stream</em></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+The binary array output stream for writing data to binary stream. 
+ </p>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g937">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+binary-array-input-stream&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="binary-file.html#_g933"><em class="cl">binary-array-stream</em></a>, <em class="cl">fundamental-binary-input-stream</em> and <em class="cl">fundamental-character-input-stream</em></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+The binary array input stream for reading data from binary stream. 
+ </p>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g938">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+binary-array-io-stream&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="binary-file.html#_g936"><em class="cl">binary-array-output-stream</em></a> and <a href="binary-file.html#_g937"><em class="cl">binary-array-input-stream</em></a></td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+The binary array input/output stream for both reading and writng data from and to binary stream. 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g956">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+binary-array-stream-p&nbsp;&nbsp;</td>
+<td class="lambda-list">
+obj</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns t, if obj is binary-array-stream, nil otherwise. 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g948">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+stream-file-position&nbsp;&nbsp;</td>
+<td class="lambda-list">
+(stream binary-array-stream)</td>
+<td class="symbol-type">
+&nbsp;[Method]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns file position. 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g949">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+(setf stream-file-position)&nbsp;&nbsp;</td>
+<td class="lambda-list">
+position-spec (stream binary-array-stream)</td>
+<td class="symbol-type">
+&nbsp;[Method]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Sets stream file position. position-spec <span class="keyword">
+:start </span>
+sets file 
+ position in the beginning of the stream, <span class="keyword">
+:end </span>
+to the end of stream and 
+ integer value to according offset. 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g950">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+binary-stream-length&nbsp;&nbsp;</td>
+<td class="lambda-list">
+stream</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns length of stream. 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g953">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+make-binary-array-input-stream&nbsp;&nbsp;</td>
+<td class="lambda-list">
+<em>&amp;optional</em> initial-contents</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns new binary array input stream. The initial-contents is 
+ sequence of bytes and if given the stream contains bytes in 
+ initial-contents. 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g954">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+make-binary-array-output-stream&nbsp;&nbsp;</td>
+<td class="lambda-list">
+<em>&amp;optional</em> initial-contents</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns new binary array output stream. The initial-contents is 
+ sequence of bytes and if given the stream contains bytes in 
+ initial-contents. 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g955">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+make-binary-array-io-stream&nbsp;&nbsp;</td>
+<td class="lambda-list">
+<em>&amp;optional</em> initial-contents</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns new binary array input/output stream. The initial-contents is 
+ sequence of bytes and if given the stream contains bytes in 
+ initial-contents. 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g959">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+read-integer&nbsp;&nbsp;</td>
+<td class="lambda-list">
+stream <em>&amp;key</em> (bytes 1) (signed nil) (endianness :little-endian)</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Reads and returns integer from stream. Integer size is (8 * bytes) 
+ bits. If signed is t integer is interpreted as signed, otherwise 
+ unsigned. Byte order is defined by endianness. 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g960">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+read-integers&nbsp;&nbsp;</td>
+<td class="lambda-list">
+stream size <em>&amp;key</em> (bytes 1) (signed nil) (endianness :little-endian)</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Reads and returns array of integers of size bytes. 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g961">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+read-bytes&nbsp;&nbsp;</td>
+<td class="lambda-list">
+stream size <em>&amp;optional</em> offset</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Reads and returns size bytes from stream. If offset is given, 
+ stream is positioned to that offset before reading. 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g962">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+read-array&nbsp;&nbsp;</td>
+<td class="lambda-list">
+stream size <em>&amp;optional</em> (element-reader #'read-byte)</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Reads and returns array of values. Each value is read with element-reader. 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g964">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+write-integer&nbsp;&nbsp;</td>
+<td class="lambda-list">
+value stream <em>&amp;key</em> (bytes 1) (endianness :little-endian)</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Writes integer to stream as unsigned bytes. Byte order is defined by endianness. 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g965">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+write-integers&nbsp;&nbsp;</td>
+<td class="lambda-list">
+seq stream <em>&amp;key</em> (bytes 1) (endianness :little-endian)</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Write sequence of integers to binary stream. 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g966">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+open-binary-stream&nbsp;&nbsp;</td>
+<td class="lambda-list">
+filespec <em>&amp;key</em> (if-exists :overwrite) (if-does-not-exist :error)</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Opens and returns binary stream. If filespec is a string or 
+ pathname, the designed file is opened. If filespec is stream, filespec is returned. 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g967">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+with-output-to-binary-array&nbsp;&nbsp;</td>
+<td class="lambda-list">
+(stream <em>&amp;optional</em> array-form) <em>&amp;body</em> body</td>
+<td class="symbol-type">
+&nbsp;[Macro]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns byte array after executing the body from binary array stream. 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g968">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+with-input-from-binary-array&nbsp;&nbsp;</td>
+<td class="lambda-list">
+(var array <em>&amp;key</em> (index 0 index-p) start end) <em>&amp;body</em> body</td>
+<td class="symbol-type">
+&nbsp;[Macro]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Binds var to binary array input stream with given initial contents 
+ and executes body with var available for reading. 
+ </p>
+</div>
+</div>
+</div>
+<div class="cludg-footer">
+Generated by&nbsp;<a href="mailto:ihatchondo@common-lisp.net" lang="en">
+CLDOC</a>
+- 2011-01-13 20:30:09</div>
+</body>
+</html>

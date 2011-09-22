@@ -1,0 +1,64 @@
+2011-01-13  sami-makinen
+
+	* api-doc, api-doc/binary-file.html, api-doc/cludg.css: Added CLDOC
+	  generated api-doc.
+	* binary-file.lisp: Fix to file-position bug. SBCL has different
+	  method signature and the stream-file-position was not called.
+
+2011-01-06  sami-makinen
+
+	* binary-file.lisp: Updated documentation.
+	* README: Updated README.
+	* ChangeLog: Added ChangeLog.
+	* cl-binary-file-trunk.asd, cl-binary-file.asd: Renamed file
+	  according to version.
+	* big-endian/package.lisp, big-endian/test/unit/io.lisp,
+	  binary-file.lisp, cl-binary-file.asd, little-endian/package.lisp,
+	  little-endian/test/unit/io.lisp, package.lisp,
+	  test/unit/binary-file.lisp, vendor, vendor/lisp-unit.lisp:
+	  Refactored binary-file to use lisp-unit by Christopher K.
+	  Riesbeck.
+	  Added assert-typep to lisp-unit (under vendor dir).
+	  Unit tests were refactored with following modifications:
+	  - def-test (name) -> define-test name
+	  - assert-typep obj type -> assert-typep type obj
+	  - assert-condition error -> assert-error 'error
+	  - unit tests are in their own package
+	  - all symbols need to have package specification
+	  Refactored binary-file to use trivial-gray-streams for
+	  portability.
+
+2011-01-01  sami-makinen
+
+	* binary-file.asd, cl-binary-file.asd: Renamed asd file according
+	  to project name.
+	* binary-file.asd: Renamed system to match project name.
+
+2010-12-31  sami-makinen
+
+	* LICENSE, README: Added LICENSE and README files.
+	* big-endian/io.lisp, big-endian/package.lisp, binary-file.asd,
+	  little-endian/io.lisp, little-endian/package.lisp, package.lisp:
+	  Added read-uint8 defuns.
+	  Renamed packages (dropped org.alien-consader).
+	  Changed version to match svn version (trunk).
+
+2010-12-05  sami-makinen
+
+	* binary-file.lisp: Fix to an array adjustement bug at
+	  stream-write-byte. Array was not correctly adjusted and was one
+	  too short.
+	  Fix to an with-input-from-binary-array. File position setting was
+	  not expanded correctly.
+
+2010-12-01  sami-makinen
+
+	* ., big-endian, big-endian/big-endian.asd, big-endian/io.lisp,
+	  big-endian/package.lisp, big-endian/test, big-endian/test/unit,
+	  big-endian/test/unit/io.lisp, binary-file.asd, binary-file.lisp,
+	  little-endian, little-endian/io.lisp,
+	  little-endian/little-endian.asd, little-endian/package.lisp,
+	  little-endian/test, little-endian/test/unit,
+	  little-endian/test/unit/io.lisp, package.lisp, test, test/unit,
+	  test/unit/binary-file.lisp: Initial import.
+
